@@ -391,7 +391,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: d70999ba737574c808b1d37cbdca0c37, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.157
+  m_Volume: 0.078
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -654,6 +654,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8273c258299a99c429aacdc32aa40ec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  obstaclePrefabs:
+  - {fileID: 2561654953568076342, guid: f1538a622aff0ed4680fb680e46bb893, type: 3}
+  - {fileID: 8679690326008798682, guid: be9108030c872dd4cbbc8107060b7f1f, type: 3}
+  - {fileID: 4503885361889352275, guid: 53d003f27c8bd5240bc00138b61dbf1a, type: 3}
+  - {fileID: 1355478835262283453, guid: bfa1ad0dbc6f36f4d8d047f741994fc5, type: 3}
   obstaclePrefab: {fileID: 2561654953568076342, guid: f1538a622aff0ed4680fb680e46bb893, type: 3}
 --- !u!1001 &1390541430
 PrefabInstance:
@@ -707,6 +712,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2797584593697879330, guid: 0703a1849c2c89b4db4568688faf0c5f, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797584593713102194, guid: 0703a1849c2c89b4db4568688faf0c5f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797584593713102194, guid: 0703a1849c2c89b4db4568688faf0c5f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797584593713102194, guid: 0703a1849c2c89b4db4568688faf0c5f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.13
+      objectReference: {fileID: 0}
     - target: {fileID: 3494321091231728350, guid: 0703a1849c2c89b4db4568688faf0c5f, type: 3}
       propertyPath: jumpSound
       value: 
@@ -715,6 +736,10 @@ PrefabInstance:
       propertyPath: crashSound
       value: 
       objectReference: {fileID: 8300000, guid: 913d6445ee8cc4152a9c18da590ee203, type: 3}
+    - target: {fileID: 3494321091231728350, guid: 0703a1849c2c89b4db4568688faf0c5f, type: 3}
+      propertyPath: doubleJumpForce
+      value: 220
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
